@@ -12,8 +12,7 @@ namespace tp_Juego
         }
         public override int CalcularDanio()
         {
-            x = Fuerza / 2 * Agilidad * Magia / 2;
-            return x;
+            return Fuerza / 2 * Agilidad * Magia / 2;
         }
     }
 }

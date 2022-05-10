@@ -7,21 +7,18 @@ namespace tp_Juego
         public int Fuerza;
         public int Agilidad;
         public int Magia;
-        public int x;
-        public string mensaje = "";
        
 
 
         public virtual int CalcularDanio()
         {
-            return x;
+            return 0;
         }
         public virtual string Atacar()
 
             {
-                mensaje = $"{Nombre} hizo {x} de daño";
-                return mensaje;
-            }
+                return $"{Nombre} hizo {CalcularDanio()} de daño";
+        }
         public string MoverseEjeX()
         {
             return "Moviendose sobre el eje X";

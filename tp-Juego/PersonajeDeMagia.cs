@@ -26,14 +26,12 @@ namespace tp_Juego
 
         public override string Atacar()
         { 
-            mensaje = $"{Nombre} hizo {x} de daño gracias a su magia";
-            return mensaje;
+            return $"{Nombre} hizo {CalcularDanio()} de daño gracias a su magia";
         }
 
         public override int CalcularDanio()
         {
-            x = Fuerza + Agilidad + Magia * 4;
-            return x;
+            return Fuerza + Agilidad + Magia * 4;
         }
         
     }
